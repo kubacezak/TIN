@@ -1,0 +1,60 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.maly_image {
+	width: 30%;
+	height: 30%;
+}
+.margin_dol {
+	margin-bottom: 5vh;
+}
+table,
+td {
+	border: 1px solid #333;
+}
+
+thead,
+tfoot {
+	background-color: #333;
+	color: #fff;
+}
+
+td,
+th {
+	border: 1px solid rgb(190, 190, 190);
+	padding: 10px;
+}
+
+td {
+	text-align: center;
+}
+.zajecia1 {
+	background-color: red;
+}
+.zajecia2 {
+	background-color: green;
+}
+
+/* Styl dla listy uczelni */
+.universities {
+	display: flex;
+	justify-content: space-between; /* Rozłożenie elementów poziomo */
+	gap: 20px; /* Marginesy między elementami */
+	padding: 20px;
+}
+
+/* Styl dla pojedynczej uczelni */
+.university {
+	flex: 1; /* Rozciągnięcie elementów na szerokość kontenera */
+	text-align: center;
+	border: 1px solid #ccc; /* Dodatkowa ramka wokół elementów */
+	padding: 10px; /* Marginesy wewnątrz elementów */
+}
