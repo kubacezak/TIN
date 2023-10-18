@@ -8,7 +8,12 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-
+.font_roboto {
+	font-family: 'Roboto', sans-serif;
+}
+.font_alumni {
+	font-family: 'Alumni Sans Collegiate One', sans-serif;
+}
 .maly_image {
 	width: 30%;
 	height: 30%;
@@ -19,6 +24,9 @@ body {
 table,
 td {
 	border: 1px solid #333;
+}
+.niebieskibordertabeli {
+	border: 10px solid blue;
 }
 
 thead,
@@ -43,18 +51,15 @@ td {
 	background-color: green;
 }
 
-/* Styl dla listy uczelni */
 .universities {
 	display: flex;
-	justify-content: space-between; /* Rozłożenie elementów poziomo */
-	gap: 20px; /* Marginesy między elementami */
+	justify-content: space-between;
 	padding: 20px;
 }
 
-/* Styl dla pojedynczej uczelni */
 .university {
-	flex: 1; /* Rozciągnięcie elementów na szerokość kontenera */
+	flex: 1;
 	text-align: center;
-	border: 1px solid #ccc; /* Dodatkowa ramka wokół elementów */
-	padding: 10px; /* Marginesy wewnątrz elementów */
+	border: 1px solid #ccc;
+	padding: 10px;
 }
