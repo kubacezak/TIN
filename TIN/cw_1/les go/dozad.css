@@ -75,3 +75,26 @@ div > a:hover {
 	font-size: 0.5rem;
 	margin: 0 1vw;
 }
+.big_box {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: -20vh;
+}
+
+.box_for_books {
+	width: 60%;
+	height: 30%;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	margin-top: -3px;
+}
+.mniejszy {
+	width: 100%;
+	height: 80%;
+}
+.mniejszy2 {
+	width: 80%;
+	height: 100%;
+}
