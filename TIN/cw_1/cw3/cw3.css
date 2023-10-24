@@ -22,3 +22,13 @@ body {
 	margin-left: 5vw;
 	margin-right: 5vw;
 }
+
+.full-width {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.full-width img {
+	max-width: 100%;
+}
