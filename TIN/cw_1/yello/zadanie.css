@@ -22,12 +22,13 @@ body {
 }
 
 .bbc {
-	margin-left: -85vw;
+	margin-left: -80vw;
+	scale: 0.8;
 }
 
 .div_bbc {
 	background-color: black;
-	height: 5vh;
+	height: 8vh;
 }
 
 .nav {
@@ -69,15 +70,14 @@ body {
 	align-items: center;
 }
 .breaker {
-	width: 12vw;
+	width: 15vw;
 	background-color: white;
-	font-size: 2.5rem;
-	margin-left: -1.5vw;
+	font-size: 1.75rem;
 }
 .breakerv2 {
-	width: 7vw;
+	width: 3.5vw;
 	background-color: white;
-	font-size: xx-large;
+	font-size: x-large;
 }
 .border_right {
 	border-right: 3px solid gray;
@@ -95,7 +95,7 @@ body {
 .gruby-foncik {
 	margin-left: 10vw;
 	font-weight: bold;
-	font-size: 3.5rem;
+	font-size: 1.75rem;
 	color: black;
 }
 
@@ -105,4 +105,5 @@ body {
 	height: 70vh;
 	margin-left: 4vw;
 	background-color: white;
+	scale: 0.8;
 }
