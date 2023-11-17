@@ -5,7 +5,6 @@
 // Zaimplementuj poniższe funkcje – jedna funkcja/obiekt + przykład wykorzystania na plik, pliki nazwij 5a.js 5b.js itd. Użyj console.log do wypisywania wyników działania funkcji
 
 // Funkcja licząca silnię zadanej liczby
-
 function oblicz_silnia(num) {
 	if (num === 0 || num === 1) {
 		return 1
