@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cw_7.css">
+    <title>cw_7</title>
+</head>
+
+<body>
+    <div id="box_main">
+
+        <div class="box_1">
+            <form class="twiceTheSize" onsubmit="return walidujFormularz()">
+                <label for="Imie">Podaj imię:</label>
+                <input type="text" id="Imie" name="Imie">
+                <label for="Wiek">Podaj wiek:</label>
+                <input type="number" id="Wiek" name="Wiek">
+
+                <input type="submit" value="Wyślij">
+            </form>
+
+            <script src="cw7.js"></script>
+        </div>
+        <div class="box_2 bgc_blue twiceTheSize">
+            <div class="dimentions">
+
+                <input type="text" id="tekstInput" placeholder="Wpisz tekst...">
+                <button onclick="dodajAkapit()">Dodaj akapit</button>
+                <button onclick="usun()">wyczysc</button>
+                <div id="kontener">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
