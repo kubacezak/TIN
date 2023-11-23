@@ -11,14 +11,15 @@ function oblicz_silnia(num) {
 	} else {
 		return num * oblicz_silnia(num - 1)
 	}
+	
 }
 
 function print_silnia(num) {
 	const result = oblicz_silnia(num)
 	return `Silnia z ${num} to ${result}`
 }
-// console.log(factorial(5))
-console.log(print_silnia(5))
+
+console.log(print_silnia(12))
 
 // Funkcja przyjmująca tablicę liczb i znajdująca największą wartość
 function findMax(numbers) {
