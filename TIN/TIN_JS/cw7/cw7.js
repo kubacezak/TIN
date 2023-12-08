@@ -27,6 +27,6 @@ function dodajAkapit() {
 	kontener.appendChild(nowyAkapit)
 }
 function usun() {
-    let kontener = document.getElementById('kontener');
-    kontener.innerHTML = '';
+	let kontener = document.getElementById('kontener')
+	kontener.innerHTML = ''
 }

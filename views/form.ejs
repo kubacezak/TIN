@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    body {
+        background-color: grey;
+        color: white;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        border: black 2px solid;
+        background-color: white;
+        margin: auto;
+        margin-top: 25%;
+    }
+
+    form>input {
+        margin: 5px;
+    }
+
+    form>button {
+        margin: 5px;
+    }
+</style>
+
+<body>
+    <form action="/formdata" method="post">
+        <input type="text" name="field1" placeholder="1">
+        <input type="text" name="field2" placeholder="2">
+        <input type="text" name="field3" placeholder="3">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cw8.css">
+    <title>cw_8</title>
+</head>
+
+<body>
+    <div id="box_main">
+        <!-- // a)	Napisz funkcję JS konwertującą temperatury między skalami Celsjusza i Fahrenheita (https://en.wikipedia.org/wiki/Fahrenheit), plus formularz przyjmujący dane do konwersji i wypisujący wynik.  -->
+        <!-- b)	Strona HTML powinna zawierać tabelkę z trzema kolumnami i formularz z przyciskiem. Napisz funkcję JS odczytującą dane z formularza, wstawiającą nowy wiersz do tabelki w oparciu o te dane i czyszczącą zawartość formularza. Podepnij funkcję pod przycisk formularza. -->
+
+        <div class="box_1 bgc_blue twiceTheSize">
+            <form action="">
+                <p>C to F</p>
+                <input value="C" type="number" id="temperatura1" placeholder="Wpisz temperaturę">
+                <button type="button" onclick="Przelicz('C')">Przelicz</button>
+            </form>
+            <form action="">
+                <p>F to C</p>
+                <input value="F" type="number" id="temperatura2" placeholder="Wpisz temperaturę">
+                <button type="button" onclick="Przelicz('F')">Przelicz</button>
+            </form>
+        </div>
+        <div class="box_2 bgc_blue twiceTheSize">
+            <form class="box_3" id="formularz">
+                <input type="text" id="id" placeholder="ID">
+                <input type="text" id="nazwa" placeholder="Nazwa">
+                <input type="text" id="wartosc" placeholder="Wartość">
+                <button type="button" onclick="dodajWiersz()">Dodaj wiersz</button>
+            </form>
+
+            <table class="table_style" id="tabela">
+                <tr>
+                    <th>ID</th>
+                    <th>Nazwa</th>
+                    <th>Wartość</th>
+                </tr>
+            </table>
+        </div>
+
+        <script>
+            function Przelicz(skala) {
+                let temperatura;
+                let wynik;
+
+                if (skala === 'C') {
+                    temperatura = document.getElementById('temperatura1').value;
+                    wynik = (temperatura * 9 / 5) + 32;
+                } else {
+                    temperatura = document.getElementById('temperatura2').value;
+                    wynik = (temperatura - 32) * 5 / 9;
+                }
+
+                alert('Wynik:' + wynik.toFixed(2));
+            }
+            function dodajWiersz() {
+                let id = document.getElementById('id').value;
+                let nazwa = document.getElementById('nazwa').value;
+                let wartosc = document.getElementById('wartosc').value;
+                let tabela = document.getElementById('tabela');
+
+                let nowyWiersz = tabela.insertRow(1);
+                let komorka1 = nowyWiersz.insertCell(0);
+                let komorka2 = nowyWiersz.insertCell(1);
+                let komorka3 = nowyWiersz.insertCell(2);
+
+                komorka1.textContent = id;
+                komorka2.textContent = nazwa;
+                komorka3.textContent = wartosc;
+
+                document.getElementById('formularz').reset();
+            }
+        </script>
+        <style>
+            body {
+                background-color: grey;
+            }
+
+            #box_main {
+                width: 600px;
+                height: 1400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: space-between;
+                margin: 0 auto;
+            }
+
+            .box_1 {
+                width: 600px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+            }
+
+            .box_2 {
+                width: 600px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .box_3 {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-direction: flex-start;
+            }
+
+            .twiceTheSize {
+                scale: 200%;
+            }
+
+            .bgc_blue {
+                background-color: blue;
+                padding-top: 20px;
+            }
+
+            .dimentions {
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            .table_style {
+                border: 3px solid black;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            .table_style th {
+                background-color: #007bff;
+                color: white;
+                padding: 10px;
+            }
+
+            .table_style td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+
+            .table_style tr:nth-child(even) {
+                background-color: lightskyblue;
+            }
+
+            .table_style tr:nth-child(odd) {
+                background-color: offwhite;
+            }
+
+            form>p {
+                font-size: large;
+                color: white;
+            }
+
+            #kontener {
+                margin-top: 20px;
+                height: 200px;
+                overflow: auto;
+            }
+
+            #kontener p {
+                font-size: 20px;
+                color: white;
+            }
+        </style>
+    </div>
+
+
+</body>
+
+</html>

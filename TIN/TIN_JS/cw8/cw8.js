@@ -1,0 +1,1 @@
+// a)	Napisz funkcję JS konwertującą temperatury między skalami Celsjusza i Fahrenheita (https://en.wikipedia.org/wiki/Fahrenheit), plus formularz przyjmujący dane do konwersji i wypisujący wynik. 

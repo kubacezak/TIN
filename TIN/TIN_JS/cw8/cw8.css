@@ -1,0 +1,82 @@
+body {
+	background-color: grey;
+}
+#box_main {
+	width: 600px;
+	height: 1400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: space-between;
+	margin: 0 auto;
+}
+.box_1 {
+	width: 600px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+.box_2 {
+	width: 600px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 auto;
+    padding: 20px;
+}
+.box_3 {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+    flex-direction: flex-start;
+}
+.twiceTheSize {
+	scale: 200%;
+}
+.bgc_blue {
+	background-color: blue;
+	padding-top: 20px;
+}
+.dimentions {
+	max-width: 100%;
+	max-height: 100%;
+}
+.table_style {
+	border: 3px solid black;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.table_style th {
+	background-color: #007bff;
+	color: white;
+	padding: 10px;
+}
+
+.table_style td {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.table_style tr:nth-child(even) {
+	background-color: lightskyblue;
+}
+form > p {
+	font-size: large;
+	color: white;
+}
+#kontener {
+	margin-top: 20px;
+	height: 200px;
+	overflow: auto;
+}
+
+#kontener p {
+	font-size: 20px;
+	color: white;
+}
