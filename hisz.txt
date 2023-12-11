@@ -1,0 +1,31 @@
+1. ¿A qué hora se levantó ayer?
+    Z: Ayer, se levantó a las 4:00 de la mañana.
+2. ¿A qué hora empezó a trabajar?
+    Z: No trabaja.
+3. ¿A qué hora salió después de comer?
+    Z: No trabaja, así que no sale de su trabajo.
+4. ¿Dónde fue a comer?
+    Z: Fue a la pizzería para comer.
+5. ¿Con quién comió después de comer?
+    Z: Comió con sus amigos después de comer.
+6. ¿Dónde estuvo después de comer?
+    Z: Estuvo en la biblioteca después de comer.
+7. ¿Cuándo llegó a casa?
+    Z: Llegó a casa a las 9 de la noche.
+8. ¿Qué cenó?
+    Z: Cenó un sandwich.
+9. ¿Qué vio en la televisión?
+    Z: Vio las películas en la televisión.
+10. ¿A qué hora se acostó?
+    Z: Se acostó a la una de la madrugada.
+
+Zuzia se levantó a las 4:00 de la mañana ayer.
+Zuzia no trabaja.
+Zuzia no trabaja, así que no sale de su trabajo.
+Zuzia fue a la pizzería para comer.
+Zuzia comió con sus amigos después de comer.
+Zuzia estuvo en la biblioteca después de comer.
+Zuzia llegó a casa a las 9 de la noche.
+Zuzia cenó un sandwich.
+Zuzia vio las películas en la televisión.
+Zuzia se acostó a la una de la madrugada.
